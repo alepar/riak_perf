@@ -9,11 +9,12 @@ import com.basho.riak.client.core.util.BinaryValue;
 public class Simple {
 
     public static void main(String[] args) throws Exception {
-        final RiakClient client = RiakClient.newClient("127.0.0.1");
+        final RiakClient client = RiakClient.newClient("52.6.197.138");
 
         try {
             final Namespace ns = new Namespace("default", "my_bucket");
             final Location location = new Location(ns, "my_key");
+
             final RiakObject storeObj = new RiakObject();
             storeObj.setValue(BinaryValue.create("my_value"));
             final StoreValue store = new StoreValue.Builder(storeObj)
@@ -25,6 +26,7 @@ public class Simple {
             final FetchValue fetch = new FetchValue.Builder(location).build();
             final FetchValue.Response response = client.execute(fetch);
             final RiakObject fetchObj = response.getValue(RiakObject.class);
+
             System.out.println(fetchObj.getValue().toString());
         } finally {
             client.shutdown();
