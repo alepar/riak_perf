@@ -6,8 +6,8 @@
         </encoder>
     </appender>
 
-    <logger name="com.basho" level="INFO"/>
-    <logger name="io.netty" level="INFO"/>
+<!--    <logger name="com.basho" level="INFO"/>
+    <logger name="io.netty" level="INFO"/>-->
 
     <logger name="ru" level="DEBUG"/>
 
