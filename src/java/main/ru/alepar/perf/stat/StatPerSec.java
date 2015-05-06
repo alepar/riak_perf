@@ -1,4 +1,4 @@
-package ru.alepar.perf;
+package ru.alepar.perf.stat;
 
 public interface StatPerSec {
     double avg();

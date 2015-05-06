@@ -1,3 +1,5 @@
+package ru.alepar.perf.riak;
+
 import com.basho.riak.client.api.RiakClient;
 import com.basho.riak.client.api.commands.kv.FetchValue;
 import com.basho.riak.client.api.commands.kv.StoreValue;

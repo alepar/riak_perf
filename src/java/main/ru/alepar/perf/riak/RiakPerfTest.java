@@ -1,10 +1,14 @@
-package ru.alepar.perf;
+package ru.alepar.perf.riak;
 
 import com.basho.riak.client.api.RiakClient;
 import com.basho.riak.client.api.commands.kv.FetchValue;
 import com.basho.riak.client.core.query.Location;
 import com.basho.riak.client.core.query.Namespace;
 import com.basho.riak.client.core.query.RiakObject;
+import ru.alepar.perf.generator.JobGenerator;
+import ru.alepar.perf.generator.TpsGenerator;
+import ru.alepar.perf.generator.TpsGeneratorStatPrinter;
+import ru.alepar.perf.generator.UnthrottledTpsGenerator;
 
 public class RiakPerfTest {
 

@@ -1,4 +1,4 @@
-package ru.alepar.perf;
+package ru.alepar.perf.stat;
 
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicReference;

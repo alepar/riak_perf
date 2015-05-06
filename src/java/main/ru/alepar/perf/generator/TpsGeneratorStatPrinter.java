@@ -1,4 +1,7 @@
-package ru.alepar.perf;
+package ru.alepar.perf.generator;
+
+import ru.alepar.perf.stat.RunningWindowStat;
+import ru.alepar.perf.stat.StatPerSec;
 
 import java.io.PrintStream;
 

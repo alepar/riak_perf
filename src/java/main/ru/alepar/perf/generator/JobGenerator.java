@@ -1,4 +1,4 @@
-package ru.alepar.perf;
+package ru.alepar.perf.generator;
 
 public interface JobGenerator {
     Runnable next();
