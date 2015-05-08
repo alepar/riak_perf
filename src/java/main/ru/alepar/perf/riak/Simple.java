@@ -11,7 +11,7 @@ import com.basho.riak.client.core.util.BinaryValue;
 public class Simple {
 
     public static void main(String[] args) throws Exception {
-        final RiakClient client = RiakClient.newClient("52.6.197.138");
+        final RiakClient client = RiakClient.newClient("riak-lb-554420006.us-east-1.elb.amazonaws.com");
 
         try {
             final Namespace ns = new Namespace("default", "my_bucket");
